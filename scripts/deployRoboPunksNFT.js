@@ -11,7 +11,7 @@ async function main() {
   const roboPunksNFT = await RoboPunksNFT.deploy();
 
   await roboPunksNFT.deployed();
-  console.log("RoboPunksNft deplyed to :", roboPunksNFT.address);
+  console.log("RoboPunksNFT deployed to :", roboPunksNFT.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
