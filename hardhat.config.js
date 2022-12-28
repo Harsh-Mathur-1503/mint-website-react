@@ -1,3 +1,4 @@
+
 require("@nomicfoundation/hardhat-toolbox");
 require("@nomiclabs/hardhat-etherscan");
 const dotenv = require("dotenv");
@@ -15,17 +16,3 @@ module.exports = {
     apiKey:process.env.REACT_APP_ETHERSCAN_KEY,
   }
 };
-const NodePolyfillPlugin = require('node-polyfill-webpack-plugin')
-module.exports = {
-// Other rules like entry, output, devserver....,
-plugins: [
-    new NodePolyfillPlugin()
-]}
-module.exports = {
-  // ... your config
-  resolve: {
-    fallback: {
-      path: require.resolve("path-browserify")
-    }
-  }
-}
